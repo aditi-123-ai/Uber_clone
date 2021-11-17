@@ -33,6 +33,9 @@ export default function Home() {
           </ActionButton>
         </ActionButtons>
         {/* input */}
+        <InputButton>
+          Where to?
+        </InputButton>
       </ActionItems>
     </Wrapper>
   )
@@ -75,4 +78,8 @@ const ActionButton = tw.div`
 
 const ActionButtonImage = tw.img`
  h-3/5 
+`
+
+const InputButton = tw.div`
+  h-20 bg-gray-200 text-2xl p-4 flex item-center mt-8 cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105
 `
